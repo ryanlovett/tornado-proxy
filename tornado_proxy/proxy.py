@@ -29,8 +29,11 @@ import logging
 import os
 import sys
 import socket
-from urlparse import urlparse
-
+try:
+    from urlparse import urlparse
+except:
+    from urllib.parse import urlparse
+    
 import tornado.httpserver
 import tornado.ioloop
 import tornado.iostream
