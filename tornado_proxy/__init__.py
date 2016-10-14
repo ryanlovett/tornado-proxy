@@ -1,1 +1,1 @@
-from proxy import run_proxy
+from tornado_proxy.proxy import run_proxy
